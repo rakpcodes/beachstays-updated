@@ -1,0 +1,10 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        width: 33%;
+    }
+}

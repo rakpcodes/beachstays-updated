@@ -289,6 +289,25 @@ html {
   overflow: hidden;
 }
 
+.nav-logo {
+  font-family: "Playfair Display SC", serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #50e3c2;
+  font-size: 3.46rem;
+}
+.nav-list {
+  list-style: none;
+  text-align: center;
+}
+.nav-list-item {
+  font-size: 2rem;
+}
+.nav-list-link {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .u-margin-bottom-small {
   margin-bottom: 1rem !important;
 }
@@ -311,4 +330,22 @@ html {
 
 .u-margin-top-big {
   margin-top: 8rem !important;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 33%;
 }

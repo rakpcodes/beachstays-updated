@@ -1,0 +1,27 @@
+// font-family: 'Lato', sans-serif;
+// font-family: 'Playfair Display SC', serif;
+
+.nav {
+    &-logo {
+        font-family: $font-family-second;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color-1;
+        font-size: $font-size-logo;
+    }
+
+    &-list {
+        list-style: none;
+        text-align: center;
+
+        &-item {
+            font-size: $font-size-nav;
+        }
+
+        &-link {
+            text-decoration: none;
+            text-transform: uppercase;
+            // color: $color-5;
+        }
+    }
+}
