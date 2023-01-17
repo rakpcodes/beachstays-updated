@@ -339,6 +339,7 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: transparent;
 }
 .nav-list {
   display: -webkit-box;
@@ -348,4 +349,10 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 33%;
+}
+
+.header {
+  background-image: url(../../../Assets/home-image-1.jpg);
+  background-size: cover;
+  width: 100%;
 }
