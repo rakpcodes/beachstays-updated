@@ -1,0 +1,15 @@
+html {
+    font-size: 62.5%;
+
+    body {
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+        line-height: 5.8rem;
+        color: $color-text;
+        background-color: $color-5;
+
+        p {
+            font-weight: 400;
+        }
+    }
+}

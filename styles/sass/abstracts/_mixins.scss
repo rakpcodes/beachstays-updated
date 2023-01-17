@@ -1,0 +1,4 @@
+@mixin lineLetter($val1, $val2) {
+    line-height: $val1;
+    letter-spacing: $val2;
+}
