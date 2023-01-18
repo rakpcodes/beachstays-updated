@@ -443,3 +443,9 @@ html {
   -webkit-box-shadow: -2em 2rem 0px 0.5rem #50e3c2;
           box-shadow: -2em 2rem 0px 0.5rem #50e3c2;
 }
+
+.section-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
