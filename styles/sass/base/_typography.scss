@@ -10,7 +10,7 @@
         }
 
         &__sub {
-            font-size: $font-size-h1-second;
+            font-size: $font-size-h1-sub;
             font-family: $font-family-second;
             color: $color-2;
             letter-spacing: 0.5rem;
@@ -42,6 +42,22 @@
                 &:hover {
                     color: $color-1;
                 }
+            }
+        }
+    }
+}
+
+.section {
+    &-about {
+        .text-box {
+            &__header {
+                font-size: $font-size-h2;
+                @include lineLetter(5.8rem, 0.38rem);
+                color: $color-3;
+            }
+
+            &__info {
+                font-size: $font-size-regular;
             }
         }
     }

@@ -324,6 +324,16 @@ html {
   color: #50e3c2;
 }
 
+.section-about .text-box__header {
+  font-size: 3.5rem;
+  line-height: 5.8rem;
+  letter-spacing: 0.38rem;
+  color: #0c5f4c;
+}
+.section-about .text-box__info {
+  font-size: 2rem;
+}
+
 .u-margin-bottom-small {
   margin-bottom: 1rem !important;
 }
@@ -394,4 +404,11 @@ html {
   position: absolute;
   top: 40%;
   left: 45%;
+}
+
+.section-about {
+  margin: 10rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
