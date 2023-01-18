@@ -1,6 +1,21 @@
 .section {
     &-about {
-        margin: 10rem 0;
+        margin: 15rem 0;
         display: flex;
+        justify-content: space-between;
+
+        .text-box {
+            width: 65%;
+        }
+
+        .image-box {
+            width: 25%;
+
+            &__img {
+                width: 100%;
+                object-fit: cover;
+                box-shadow: -2em 2rem 0px 0.5rem $color-1;
+            }
+        }
     }
 }

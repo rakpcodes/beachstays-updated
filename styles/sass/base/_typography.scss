@@ -58,6 +58,7 @@
 
             &__info {
                 font-size: $font-size-regular;
+                @include lineLetter(3.2rem, 0.2rem);
             }
         }
     }
