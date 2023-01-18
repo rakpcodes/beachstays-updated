@@ -360,6 +360,17 @@ html {
   margin-top: 8rem !important;
 }
 
+.btn {
+  font-family: "Playfair Display SC", serif;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.1rem;
+  background-color: #063974;
+  color: #fafffe;
+  border: none;
+  padding: 1rem 1.5rem;
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -423,7 +434,7 @@ html {
   width: 65%;
 }
 .section-about .image-box {
-  width: 25%;
+  width: 23%;
 }
 .section-about .image-box__img {
   width: 100%;

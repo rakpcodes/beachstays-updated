@@ -1,0 +1,9 @@
+.btn {
+    font-family: $font-family-second;
+    font-size: $font-size-regular;
+    @include lineLetter(3.2rem, 0.1rem);
+    background-color: $color-2;
+    color: $color-5;
+    border: none;
+    padding: 1rem 1.5rem;
+}
