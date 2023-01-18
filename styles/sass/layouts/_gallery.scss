@@ -1,5 +1,21 @@
 .section {
     &-gallery {
-        display: flex;
+        background-color: $color-4;
+        padding: 10rem 0;
+
+        .gallery-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .gallery-image {
+            width: 31%;
+
+            &__img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
     }
 }

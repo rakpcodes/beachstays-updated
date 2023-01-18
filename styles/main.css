@@ -445,7 +445,25 @@ html {
 }
 
 .section-gallery {
+  background-color: #d2f9f1;
+  padding: 10rem 0;
+}
+.section-gallery .gallery-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.section-gallery .gallery-image {
+  width: 31%;
+}
+.section-gallery .gallery-image__img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
