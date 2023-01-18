@@ -7,12 +7,13 @@
     &-content {
         position: relative;
         width: 80%;
+        height: 50rem;
     }
 
     &-image {
         width: 55%;
         position: absolute;
-        top: 15rem;
+        top: 35%;
 
         &__img {
             width: 100%;
@@ -23,5 +24,8 @@
 
     &-text {
         width: 50%;
+        position: absolute;
+        top: 40%;
+        left: 45%;
     }
 }
