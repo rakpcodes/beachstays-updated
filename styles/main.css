@@ -417,8 +417,8 @@ html {
 .header-text {
   width: 50%;
   position: absolute;
-  top: 10rem;
-  left: 10rem;
+  top: 20rem;
+  left: 50rem;
 }
 
 .section-about {
@@ -434,7 +434,7 @@ html {
   width: 65%;
 }
 .section-about .image-box {
-  width: 23%;
+  width: 25%;
 }
 .section-about .image-box__img {
   width: 100%;
