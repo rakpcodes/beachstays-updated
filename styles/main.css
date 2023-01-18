@@ -299,6 +299,7 @@ html {
   font-size: 9rem;
   font-family: "Playfair Display SC", serif;
   color: #063974;
+  letter-spacing: 0.5rem;
 }
 .header .nav-logo {
   font-family: "Playfair Display SC", serif;
@@ -380,7 +381,7 @@ html {
 .header-image {
   width: 55%;
   position: absolute;
-  top: 35%;
+  top: 30%;
 }
 .header-image__img {
   width: 100%;
