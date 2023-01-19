@@ -1,8 +1,36 @@
 .section {
     &-read-more {
+        background-color: $color-4;
+        padding-top: 5rem;
         .row {
             display: flex;
-            justify-content: space-between;
+            gap: 20%;
+            align-items: center;
+
+            .image-box {
+                width: 40%;
+                position: relative;
+
+                &__img {
+                    width: 100%;
+                    object-fit: cover;
+                    display: block;
+                }
+
+                &-top {
+                    top: -10rem;
+                    box-shadow: 2rem 2rem 0 0 $color-1;
+                }
+
+                &-bottom {
+                    top: 3rem;
+                    box-shadow: -2rem 2rem 0 0 $color-1;
+                }
+            }
+
+            .text-box {
+                width: 33%;
+            }
 
             &-bottom {
                 flex-direction: row-reverse;
