@@ -483,6 +483,9 @@ html {
      object-fit: cover;
 }
 
+.section-services {
+  padding: 10rem;
+}
 .section-services .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -497,7 +500,17 @@ html {
   display: flex;
 }
 .section-services .service-box .icon {
+  display: inline-block;
+  background-color: #50e3c2;
+  border-radius: 50%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1.2rem;
+}
+.section-services .service-box .icon {
   position: relative;
-  top: 2rem;
-  margin-right: 1rem;
+  top: 1rem;
+  margin-right: 2rem;
+  text-align: center;
 }

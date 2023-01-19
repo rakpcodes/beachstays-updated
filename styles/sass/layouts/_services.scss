@@ -1,5 +1,6 @@
 .section {
     &-services {
+        padding: 10rem;
         .row {
             display: flex;
             justify-content: space-between;
@@ -9,9 +10,18 @@
             display: flex;
 
             .icon {
+                display: inline-block;
+                background-color: $color-1;
+                border-radius: 50%;
+                height: fit-content;
+                padding: 1.2rem;
+            }
+
+            .icon {
                 position: relative;
-                top: 2rem;
-                margin-right: 1rem;
+                top: 1rem;
+                margin-right: 2rem;
+                text-align: center;
             }
         }
     }
