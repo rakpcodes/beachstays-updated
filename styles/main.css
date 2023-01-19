@@ -350,6 +350,20 @@ html {
   line-height: 3.2rem;
   letter-spacing: 0.2rem;
 }
+.section-read-more .row .text-box__header {
+  font-size: 3.5rem;
+  color: #063974;
+  line-height: 5.8rem;
+  letter-spacing: 0.38rem;
+}
+.section-read-more .row .text-box__info {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.2rem;
+}
+.section-read-more .row .text-box-bottom {
+  text-align: right;
+}
 
 .u-margin-bottom-small {
   margin-bottom: 2rem !important;
