@@ -62,4 +62,26 @@
             }
         }
     }
+
+    &-services {
+        .service-box {
+            .icon {
+                font-size: $font-size-regular;
+                color: $color-5;
+            }
+        }
+
+        .text-box {
+            &__header {
+                font-size: $font-size-h3;
+                color: $color-3;
+                @include lineLetter(5.8rem, 0.32rem);
+            }
+
+            &__info {
+                font-size: $font-size-regular;
+                @include lineLetter(3.2rem, 0.2rem);
+            }
+        }
+    }
 }

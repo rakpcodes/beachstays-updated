@@ -1,0 +1,18 @@
+.section {
+    &-services {
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .service-box {
+            display: flex;
+
+            .icon {
+                position: relative;
+                top: 2rem;
+                margin-right: 1rem;
+            }
+        }
+    }
+}
