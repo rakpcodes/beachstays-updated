@@ -1,0 +1,12 @@
+.section {
+    &-read-more {
+        .row {
+            display: flex;
+            justify-content: space-between;
+
+            &-bottom {
+                flex-direction: row-reverse;
+            }
+        }
+    }
+}
