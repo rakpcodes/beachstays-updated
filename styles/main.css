@@ -364,6 +364,20 @@ html {
 .section-read-more .row .text-box-bottom {
   text-align: right;
 }
+.section-contest .text-box {
+  text-align: center;
+}
+.section-contest .text-box__header {
+  font-size: 3.5rem;
+  color: #0c5f4c;
+  line-height: 5.8rem;
+  letter-spacing: 0.38rem;
+}
+.section-contest .text-box__info {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.2rem;
+}
 
 .u-margin-bottom-small {
   margin-bottom: 2rem !important;

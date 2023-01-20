@@ -106,4 +106,21 @@
             }
         }
     }
+
+    &-contest {
+        .text-box {
+            text-align: center;
+
+            &__header {
+                font-size: $font-size-h2;
+                color: $color-3;
+                @include lineLetter(5.8rem, 0.38rem);
+            }
+
+            &__info {
+                font-size: $font-size-regular;
+                @include lineLetter(3.2rem, 0.2rem);
+            }
+        }
+    }
 }
