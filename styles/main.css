@@ -591,3 +591,10 @@ html {
   width: 100%;
   display: block;
 }
+
+.section-contest {
+  padding: 12rem 0;
+}
+.section-contest .text-box {
+  width: 55%;
+}
