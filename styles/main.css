@@ -572,3 +572,8 @@ html {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
+
+.section-bottom-banner .banner-img {
+  width: 100%;
+  display: block;
+}
