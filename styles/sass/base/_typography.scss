@@ -124,3 +124,21 @@
         }
     }
 }
+
+.footer {
+    .text-box {
+        text-align: center;
+        color: $color-5;
+
+        &__header {
+            font-family: $font-family-second;
+            font-size: $font-size-h3;
+            @include lineLetter(5.8rem, 0.24rem);
+        }
+
+        &__info {
+            font-size: $font-size-regular;
+            @include lineLetter(3.2rem, 0.2rem);
+        }
+    }
+}

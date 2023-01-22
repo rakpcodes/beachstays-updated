@@ -379,6 +379,22 @@ html {
   letter-spacing: 0.2rem;
 }
 
+.footer .text-box {
+  text-align: center;
+  color: #fafffe;
+}
+.footer .text-box__header {
+  font-family: "Playfair Display SC", serif;
+  font-size: 3rem;
+  line-height: 5.8rem;
+  letter-spacing: 0.24rem;
+}
+.footer .text-box__info {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.2rem;
+}
+
 .u-margin-bottom-small {
   margin-bottom: 2rem !important;
 }
@@ -597,4 +613,32 @@ html {
 }
 .section-contest .text-box {
   width: 55%;
+}
+
+.footer {
+  padding: 7rem 0;
+  background-color: #252f43;
+}
+.footer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer .image-box {
+  width: 30%;
+}
+.footer .image-box__img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 1rem solid #fafffe;
+}
+.footer .text-box {
+  width: 40%;
 }
