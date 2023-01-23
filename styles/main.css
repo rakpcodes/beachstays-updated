@@ -486,15 +486,6 @@ html {
   top: 20rem;
   left: 50rem;
 }
-.header-contact {
-  background-image: url(../../../Assets/contact-image-1.jpg);
-  height: 55rem;
-  margin-bottom: 0;
-}
-.header-contact-text {
-  position: relative;
-  top: 15rem;
-}
 
 .section-about {
   margin: 15rem 0;
@@ -657,4 +648,14 @@ html {
 }
 .footer .text-box {
   width: 40%;
+}
+
+.header-contact {
+  background-image: url(../../../Assets/contact-image-1.jpg);
+  height: 55rem;
+  margin-bottom: 0;
+}
+.header-contact-text {
+  position: relative;
+  top: 15rem;
 }

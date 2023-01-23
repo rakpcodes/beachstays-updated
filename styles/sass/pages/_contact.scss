@@ -1,0 +1,12 @@
+.header {
+    &-contact {
+        background-image: url(../../../Assets/contact-image-1.jpg);
+        height: 55rem;
+        margin-bottom: 0;
+
+        &-text {
+            position: relative;
+            top: 15rem;
+        }
+    }
+}
