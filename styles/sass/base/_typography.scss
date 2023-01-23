@@ -17,31 +17,39 @@
         }
     }
 
-    .nav {
-        &-logo {
-            font-family: $font-family-second;
-            text-decoration: none;
-            text-transform: uppercase;
-            color: $color-1;
-            font-size: $font-size-logo;
+    &-contact {
+        &-text {
+            font-size: $font-size-h1-alt;
+            color: $color-5;
+            @include lineLetter(5.8rem, 0.9rem);
+        }
+    }
+}
+
+.nav {
+    &-logo {
+        font-family: $font-family-second;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color-1;
+        font-size: $font-size-logo;
+    }
+
+    &-list {
+        list-style: none;
+        text-align: center;
+
+        &-item {
+            font-size: $font-size-regular;
         }
 
-        &-list {
-            list-style: none;
-            text-align: center;
+        &-link {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $color-5;
 
-            &-item {
-                font-size: $font-size-regular;
-            }
-
-            &-link {
-                text-decoration: none;
-                text-transform: uppercase;
-                color: $color-5;
-
-                &:hover {
-                    color: $color-1;
-                }
+            &:hover {
+                color: $color-1;
             }
         }
     }

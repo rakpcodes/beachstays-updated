@@ -301,26 +301,33 @@ html {
   color: #063974;
   letter-spacing: 0.5rem;
 }
-.header .nav-logo {
+.header-contact-text {
+  font-size: 8.7rem;
+  color: #fafffe;
+  line-height: 5.8rem;
+  letter-spacing: 0.9rem;
+}
+
+.nav-logo {
   font-family: "Playfair Display SC", serif;
   text-decoration: none;
   text-transform: uppercase;
   color: #50e3c2;
   font-size: 3.46rem;
 }
-.header .nav-list {
+.nav-list {
   list-style: none;
   text-align: center;
 }
-.header .nav-list-item {
+.nav-list-item {
   font-size: 2rem;
 }
-.header .nav-list-link {
+.nav-list-link {
   text-decoration: none;
   text-transform: uppercase;
   color: #fafffe;
 }
-.header .nav-list-link:hover {
+.nav-list-link:hover {
   color: #50e3c2;
 }
 
@@ -478,6 +485,15 @@ html {
   position: absolute;
   top: 20rem;
   left: 50rem;
+}
+.header-contact {
+  background-image: url(../../../Assets/contact-image-1.jpg);
+  height: 55rem;
+  margin-bottom: 0;
+}
+.header-contact-text {
+  position: relative;
+  top: 15rem;
 }
 
 .section-about {
