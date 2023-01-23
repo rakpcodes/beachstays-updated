@@ -418,6 +418,21 @@ html {
   font-weight: 300;
   color: #979797;
 }
+.section-contact-us .text-box-social__link {
+  text-decoration: none;
+}
+.section-contact-us .text-box-social__icon {
+  font-size: 2.5rem;
+  color: #2c2c2c;
+}
+.section-contact-us .text-box-contact {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.2rem;
+}
+.section-contact-us .text-box-contact__email {
+  font-weight: bold;
+}
 
 .footer .text-box {
   text-align: center;
@@ -697,13 +712,14 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 5rem;
+  gap: 12rem;
 }
 .section-contact-us .form {
+  width: 70%;
   background-color: #fafffe;
   padding: 6rem 5rem;
   position: relative;
-  top: -5rem;
+  top: -15rem;
   -webkit-box-shadow: 2rem 2rem 0 0 #50e3c2;
           box-shadow: 2rem 2rem 0 0 #50e3c2;
 }
@@ -735,4 +751,16 @@ html {
   border: 0.3rem solid #50e3c2;
   height: 25rem;
   padding-top: 4rem;
+}
+.section-contact-us .text-box {
+  width: 20%;
+}
+.section-contact-us .text-box-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2.5rem;
+}
+.section-contact-us .text-box-social__link {
+  padding: 0.5rem;
 }
