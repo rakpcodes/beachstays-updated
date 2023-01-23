@@ -385,6 +385,9 @@ html {
   line-height: 3.2rem;
   letter-spacing: 0.2rem;
 }
+.section-contact-us .form-input {
+  font-size: 2rem;
+}
 .section-contact-us .form-input::-webkit-input-placeholder {
   font-size: 2rem;
   font-family: "Lato", sans-serif;
@@ -483,7 +486,7 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 33%;
+  width: 40%;
 }
 
 .header {
@@ -688,4 +691,46 @@ html {
 .header-contact-text {
   position: relative;
   top: 15rem;
+}
+
+.section-contact-us {
+  position: relative;
+}
+.section-contact-us .form {
+  width: 60%;
+  background-color: #fafffe;
+  padding: 6rem 5rem;
+  position: absolute;
+  top: -15rem;
+  left: 9%;
+  -webkit-box-shadow: 2rem 2rem 0 0 #50e3c2;
+          box-shadow: 2rem 2rem 0 0 #50e3c2;
+}
+.section-contact-us .form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 3rem;
+}
+.section-contact-us .form-row-bottom {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.section-contact-us .form-input {
+  padding: 2rem;
+}
+.section-contact-us .form-input__text {
+  width: 50%;
+  border-style: none;
+  border-bottom: 0.3rem solid #50e3c2;
+}
+.section-contact-us .form-input__text-area {
+  resize: none;
+  border: 0.3rem solid #50e3c2;
+  height: 20rem;
 }

@@ -135,6 +135,7 @@
     &-contact-us {
         .form {
             &-input {
+                font-size: $font-size-regular;
                 &::placeholder {
                     font-size: $font-size-regular;
                     font-family: $font-family-main;
