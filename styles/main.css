@@ -693,16 +693,17 @@ html {
   top: 15rem;
 }
 
-.section-contact-us {
-  position: relative;
+.section-contact-us .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5rem;
 }
 .section-contact-us .form {
-  width: 60%;
   background-color: #fafffe;
   padding: 6rem 5rem;
-  position: absolute;
-  top: -15rem;
-  left: 9%;
+  position: relative;
+  top: -5rem;
   -webkit-box-shadow: 2rem 2rem 0 0 #50e3c2;
           box-shadow: 2rem 2rem 0 0 #50e3c2;
 }
@@ -732,5 +733,6 @@ html {
 .section-contact-us .form-input__text-area {
   resize: none;
   border: 0.3rem solid #50e3c2;
-  height: 20rem;
+  height: 25rem;
+  padding-top: 4rem;
 }
