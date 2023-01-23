@@ -131,6 +131,19 @@
             }
         }
     }
+
+    &-contact-us {
+        .form {
+            &-input {
+                &::placeholder {
+                    font-size: $font-size-regular;
+                    font-family: $font-family-main;
+                    font-weight: 300;
+                    color: $color-placeholder;
+                }
+            }
+        }
+    }
 }
 
 .footer {

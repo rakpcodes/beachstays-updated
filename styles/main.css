@@ -385,6 +385,36 @@ html {
   line-height: 3.2rem;
   letter-spacing: 0.2rem;
 }
+.section-contact-us .form-input::-webkit-input-placeholder {
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: #979797;
+}
+.section-contact-us .form-input::-moz-placeholder {
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: #979797;
+}
+.section-contact-us .form-input:-ms-input-placeholder {
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: #979797;
+}
+.section-contact-us .form-input::-ms-input-placeholder {
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: #979797;
+}
+.section-contact-us .form-input::placeholder {
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: #979797;
+}
 
 .footer .text-box {
   text-align: center;

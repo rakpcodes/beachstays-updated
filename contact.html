@@ -34,22 +34,29 @@
 
     <section class="section-contact-us">
 
-        <form action="#" class="form" name="form-contact">
-            <label for="name" class="form-label form-label__input">Name</label>
-            <input type="text" class="form input form-input__name">
+        <div class="wrapper">
 
-            <label for="email" class="form-label form-label__input">Email Address</label>
-            <input type="email" class="form input form-input__name">
+            <form action="#" class="form" name="form-contact">
 
-            <label for="message" class="form-label form-label__text-area u-margin-top-medium">Message</label>
-            <textarea name="message" id="message" class="form-input form-input__text-area"></textarea>
+                <div class="form-row-top">
+                    <label for="name" class="sr-only">Enter Your Name</label>
+                    <input type="text" class="form-input form-input__name" placeholder="Name">
 
-            <button class="btn u-margin-top-medium" type="submit">Send Message</button>
+                    <label for="email" class="sr-only">Enter Your Email Address</label>
+                    <input type="email" class="form-input form-input__name" placeholder="Email Address">
+                </div>
 
+                <div class="form-row-bottom">
+                    <label for="message" class="sr-only">Message</label>
+                    <textarea name="message" id="message" class="form-input form-input__text-area"
+                        placeholder="Message"></textarea>
 
-        </form>
+                    <button class="btn" type="submit">Send Message</button>
+                </div>
 
+            </form>
 
+        </div>
     </section>
 
 </body>
