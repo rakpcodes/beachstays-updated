@@ -24,6 +24,14 @@
             @include lineLetter(5.8rem, 0.9rem);
         }
     }
+
+    &-blog {
+        &-text {
+            font-size: $font-size-h1-alt;
+            color: $color-5;
+            @include lineLetter(5.8rem, 0.9rem);
+        }
+    }
 }
 
 .nav {
@@ -163,6 +171,59 @@
 
                 &__email {
                     font-weight: bold;
+                }
+            }
+        }
+    }
+
+    &-blog {
+        .blog-post {
+            .text-box {
+                &__header {
+                    font-size: $font-size-h2;
+                    color: $color-3;
+                    letter-spacing: 0.32rem;
+                }
+
+                &__date {
+                    font-size: $font-size-regular;
+                    font-style: italic;
+                    color: $color-2;
+                    @include lineLetter(3.2rem, 0.2rem);
+                }
+
+                &__body {
+                    font-size: $font-size-regular;
+                    @include lineLetter(3.2rem, 0.2rem);
+                }
+            }
+        }
+
+        .side-panel {
+            .text-box {
+                font-size: 1.5rem;
+                @include lineLetter(3.2rem, 0.2rem);
+
+                &__header {
+                    font-size: $font-size-regular;
+                    color: $color-2;
+                }
+                &__link {
+                    color: $color-3;
+                    text-decoration: none;
+                }
+
+                &-list {
+                    list-style: none;
+
+                    &__item::before {
+                        content: "\2022";
+                        color: $color-1;
+                        display: inline-block;
+                        width: 1rem;
+                        padding-right: 2rem;
+                        margin-left: -2rem;
+                    }
                 }
             }
         }
