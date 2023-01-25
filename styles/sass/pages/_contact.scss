@@ -20,34 +20,14 @@
 
         .form {
             width: 70%;
-            background-color: $color-5;
             padding: 6rem 5rem;
             position: relative;
             top: -15rem;
             box-shadow: 2rem 2rem 0 0 $color-1;
-            &-row {
-                display: flex;
-                justify-content: space-between;
-                gap: 3rem;
-
-                &-bottom {
-                    flex-direction: column;
-                }
-            }
 
             &-input {
-                padding: 2rem;
-                &__text {
-                    width: 50%;
-                    border-style: none;
-                    border-bottom: 0.3rem solid $color-1;
-                }
-
                 &__text-area {
-                    resize: none;
-                    border: 0.3rem solid $color-1;
                     height: 25rem;
-                    padding-top: 4rem;
                 }
             }
         }

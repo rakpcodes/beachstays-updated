@@ -1,0 +1,35 @@
+.form {
+    background-color: $color-5;
+    &-row {
+        display: flex;
+        gap: 3rem;
+
+        &-bottom {
+            flex-direction: column;
+        }
+    }
+
+    &-input {
+        padding: 2rem;
+        font-size: $font-size-regular;
+
+        &::placeholder {
+            font-size: $font-size-regular;
+            font-family: $font-family-main;
+            font-weight: 300;
+            color: $color-placeholder;
+        }
+
+        &__text {
+            width: 50%;
+            border-style: none;
+            border-bottom: 0.3rem solid $color-1;
+        }
+
+        &__text-area {
+            resize: none;
+            border: 0.3rem solid $color-1;
+            padding-top: 4rem;
+        }
+    }
+}

@@ -76,6 +76,16 @@
                 &-text-box {
                     width: 70%;
                 }
+
+                .form {
+                    width: 75%;
+
+                    &-input {
+                        &__text-area {
+                            height: 20rem;
+                        }
+                    }
+                }
             }
         }
 
