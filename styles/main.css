@@ -440,19 +440,35 @@ html {
 .section-contact-us .text-box-contact__email {
   font-weight: bold;
 }
-.section-blog .blog-post .text-box__header {
+.section-blog .blog-post-text-box__header {
   font-size: 3.5rem;
   color: #0c5f4c;
   letter-spacing: 0.32rem;
 }
-.section-blog .blog-post .text-box__date {
+.section-blog .blog-post-text-box__date {
   font-size: 2rem;
   font-style: italic;
   color: #063974;
   line-height: 3.2rem;
   letter-spacing: 0.2rem;
 }
-.section-blog .blog-post .text-box__body {
+.section-blog .blog-post-text-box__body {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.2rem;
+}
+.section-blog .blog-post .comments-header {
+  font-size: 2.5rem;
+  line-height: 5.8rem;
+  letter-spacing: 0.32rem;
+}
+.section-blog .blog-post .comments-text-box__header {
+  font-size: 2rem;
+  color: #063974;
+  line-height: 3.2rem;
+  letter-spacing: 0.2rem;
+}
+.section-blog .blog-post .comments-text-box__body {
   font-size: 2rem;
   line-height: 3.2rem;
   letter-spacing: 0.2rem;
@@ -831,33 +847,65 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.section-blog .blog-post {
-  width: 60%;
+.section-blog .border {
+  width: 80%;
   border-right: 0.5rem solid #50e3c2;
   border-bottom: 0.5rem solid #50e3c2;
   padding-right: 1.6rem;
 }
-.section-blog .blog-post .image-box {
+.section-blog .blog-post {
+  width: 100%;
+}
+.section-blog .blog-post-image-box {
   position: relative;
   top: -15rem;
   width: 100%;
   -webkit-box-shadow: 2rem 2rem 0 0 #50e3c2;
           box-shadow: 2rem 2rem 0 0 #50e3c2;
 }
-.section-blog .blog-post .image-box__img {
+.section-blog .blog-post-image-box__img {
   display: block;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.section-blog .blog-post .text-box {
+.section-blog .blog-post-text-box {
   width: 95%;
   padding-left: 15%;
   position: relative;
   top: -5rem;
 }
+.section-blog .blog-post .comments {
+  padding-left: 12%;
+}
+.section-blog .blog-post .comments-header {
+  margin: 5rem 0;
+}
+.section-blog .blog-post .comments-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  width: 77%;
+  margin: 5rem 0;
+}
+.section-blog .blog-post .comments-image-box {
+  width: 12%;
+}
+.section-blog .blog-post .comments-image-box__img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.section-blog .blog-post .comments-text-box {
+  width: 70%;
+}
 .section-blog .side-panel {
-  width: 20%;
+  width: 30%;
   position: relative;
   top: 15rem;
 }

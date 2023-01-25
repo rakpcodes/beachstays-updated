@@ -18,13 +18,18 @@
             justify-content: space-between;
         }
 
-        .blog-post {
-            width: 60%;
+        .border {
+            width: 80%;
             border-right: 0.5rem solid $color-1;
             border-bottom: 0.5rem solid $color-1;
             padding-right: 1.6rem;
+        }
 
-            .image-box {
+        .blog-post {
+            width: 100%;
+            // padding-right: 1.6rem;
+
+            &-image-box {
                 position: relative;
                 top: -15rem;
                 width: 100%;
@@ -37,16 +42,45 @@
                 }
             }
 
-            .text-box {
+            &-text-box {
                 width: 95%;
                 padding-left: 15%;
                 position: relative;
                 top: -5rem;
             }
+
+            .comments {
+                padding-left: 12%;
+                &-header {
+                    margin: 5rem 0;
+                }
+
+                &-block {
+                    display: flex;
+                    gap: 8rem;
+                    align-items: start;
+                    width: 77%;
+                    margin: 5rem 0;
+                }
+
+                &-image-box {
+                    width: 12%;
+
+                    &__img {
+                        width: 100%;
+                        object-fit: cover;
+                        display: block;
+                    }
+                }
+
+                &-text-box {
+                    width: 70%;
+                }
+            }
         }
 
         .side-panel {
-            width: 20%;
+            width: 30%;
             position: relative;
             top: 15rem;
 
