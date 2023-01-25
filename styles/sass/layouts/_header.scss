@@ -21,6 +21,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            animation: move-in-left 0.8s ease-out;
         }
     }
 
@@ -29,5 +30,7 @@
         position: absolute;
         top: 20rem;
         left: 50rem;
+        animation: move-in-left 1s ease-out 0.5s;
+        animation-fill-mode: backwards;
     }
 }
