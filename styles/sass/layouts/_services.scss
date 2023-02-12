@@ -2,13 +2,34 @@
     &-services {
         padding: 10rem;
         margin-bottom: 8rem; //For Kobe
+
+        @include respond(tab-land) {
+            margin-bottom: 0;
+        }
+
         .row {
             display: flex;
             justify-content: space-between;
+
+            &:nth-child(1) {
+                margin-bottom: 4rem;
+
+                @include respond(tab-land) {
+                    margin-bottom: 0;
+                }
+            }
+
+            @include respond(tab-land) {
+                flex-direction: column;
+            }
         }
 
         .service-box {
             display: flex;
+
+            @include respond(tab-land) {
+                margin-bottom: 3rem;
+            }
 
             .icon {
                 display: inline-block;
