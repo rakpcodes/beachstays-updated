@@ -23,6 +23,10 @@
             border-right: 0.5rem solid $color-1;
             border-bottom: 0.5rem solid $color-1;
             padding-right: 1.6rem;
+
+            @include respond(tab-port) {
+                width: 90%;
+            }
         }
 
         .blog-post {
@@ -34,6 +38,10 @@
                 top: -15rem;
                 width: 100%;
                 box-shadow: 2rem 2rem 0 0 $color-1;
+
+                @include respond(tab-port) {
+                    top: -10rem;
+                }
 
                 &__img {
                     display: block;
@@ -61,6 +69,10 @@
                     align-items: start;
                     width: 77%;
                     margin: 5rem 0;
+
+                    @include respond(tab-port) {
+                        width: 85%;
+                    }
                 }
 
                 &-image-box {
@@ -80,6 +92,10 @@
                 .form {
                     width: 75%;
 
+                    @include respond(tab-port) {
+                        width: 85%;
+                    }
+
                     &-input {
                         &__text-area {
                             height: 20rem;
@@ -93,6 +109,10 @@
             width: 30%;
             position: relative;
             top: 15rem;
+
+            @include respond(tab-port) {
+                display: none;
+            }
 
             .image-box {
                 width: 100%;
