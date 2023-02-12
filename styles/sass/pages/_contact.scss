@@ -7,6 +7,10 @@
         &-text {
             position: relative;
             top: 15rem;
+
+            @include respond(tab-land) {
+                top: 10rem;
+            }
         }
     }
 }
@@ -16,6 +20,14 @@
         .wrapper {
             display: flex;
             gap: 12rem;
+            justify-content: space-around;
+            align-items: baseline;
+
+            @include respond(tab-land) {
+                flex-direction: column;
+                align-items: center;
+                gap: 0;
+            }
         }
 
         .form {
@@ -25,6 +37,10 @@
             top: -15rem;
             box-shadow: 2rem 2rem 0 0 $color-1;
 
+            @include respond(tab-land) {
+                width: 100%;
+            }
+
             &-input {
                 &__text-area {
                     height: 25rem;
@@ -33,15 +49,39 @@
         }
 
         .text-box {
-            width: 20%;
+            width: 23%;
+
+            @include respond(tab-land) {
+                width: 65%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 4rem;
+            }
 
             &-social {
                 display: flex;
                 gap: 2.5rem;
 
-                &__link {
-                    padding: 0.5rem;
+                @include respond(tab-land) {
+                    gap: 4.5rem;
                 }
+
+                &__link {
+                    padding: 1rem;
+                    transition: all 0.2s;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+
+                    &:active {
+                        transform: scale(1);
+                    }
+                }
+
+                // &__icon {
+                // }
             }
         }
     }

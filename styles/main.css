@@ -65,6 +65,7 @@ $breakpoint arguments
 }
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 @media (min-width: 112.5em) {
   html {
@@ -107,7 +108,7 @@ html body .wrapper {
 }
 @media (max-width: 56.25em) {
   html body .wrapper {
-    max-width: 600px;
+    max-width: 550px;
   }
 }
 @media (max-width: 37.5em) {
@@ -517,6 +518,11 @@ html {
 .section-contact-us .text-box-social__icon {
   font-size: 2.5rem;
   color: #2c2c2c;
+}
+@media (max-width: 75em) {
+  .section-contact-us .text-box-social__icon {
+    font-size: 3.5rem;
+  }
 }
 .section-contact-us .text-box-contact {
   font-size: 2rem;
@@ -1100,12 +1106,34 @@ html {
   position: relative;
   top: 15rem;
 }
+@media (max-width: 75em) {
+  .header-contact-text {
+    top: 10rem;
+  }
+}
 
 .section-contact-us .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 12rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+@media (max-width: 75em) {
+  .section-contact-us .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 0;
+  }
 }
 .section-contact-us .form {
   width: 70%;
@@ -1115,11 +1143,32 @@ html {
   -webkit-box-shadow: 2rem 2rem 0 0 #50e3c2;
           box-shadow: 2rem 2rem 0 0 #50e3c2;
 }
+@media (max-width: 75em) {
+  .section-contact-us .form {
+    width: 100%;
+  }
+}
 .section-contact-us .form-input__text-area {
   height: 25rem;
 }
 .section-contact-us .text-box {
-  width: 20%;
+  width: 23%;
+}
+@media (max-width: 75em) {
+  .section-contact-us .text-box {
+    width: 65%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 4rem;
+  }
 }
 .section-contact-us .text-box-social {
   display: -webkit-box;
@@ -1127,8 +1176,23 @@ html {
   display: flex;
   gap: 2.5rem;
 }
+@media (max-width: 75em) {
+  .section-contact-us .text-box-social {
+    gap: 4.5rem;
+  }
+}
 .section-contact-us .text-box-social__link {
-  padding: 0.5rem;
+  padding: 1rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.section-contact-us .text-box-social__link:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.section-contact-us .text-box-social__link:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .header-blog {

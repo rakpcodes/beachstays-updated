@@ -1,5 +1,6 @@
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
 
     @include respond(big-desktop) {
         font-size: 75%; // 1rem = 12px, 12/16 = 75%
@@ -37,7 +38,7 @@ html {
             }
 
             @include respond(tab-port) {
-                max-width: 600px;
+                max-width: 550px;
             }
 
             @include respond(phone) {
