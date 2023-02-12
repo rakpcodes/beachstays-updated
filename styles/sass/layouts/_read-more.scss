@@ -21,6 +21,14 @@
                     width: 55%;
                 }
 
+                @include respond(tab-port) {
+                    width: 65%;
+                }
+
+                @include respond(phone) {
+                    width: 70%;
+                }
+
                 &__img {
                     width: 100%;
                     object-fit: cover;
@@ -50,12 +58,22 @@
                         width: 75%;
                         padding-left: 10rem;
                     }
+
+                    @include respond(phone) {
+                        width: 90%;
+                        padding-left: 10rem;
+                    }
                 }
 
                 &-bottom {
                     @include respond(tab-land) {
                         width: 75%;
                         padding-right: 10rem;
+                    }
+
+                    @include respond(phone) {
+                        width: 100%;
+                        padding-left: 10rem;
                     }
                 }
             }

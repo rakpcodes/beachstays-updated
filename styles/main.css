@@ -956,6 +956,16 @@ html {
     width: 55%;
   }
 }
+@media (max-width: 56.25em) {
+  .section-read-more .row .image-box {
+    width: 65%;
+  }
+}
+@media (max-width: 37.5em) {
+  .section-read-more .row .image-box {
+    width: 70%;
+  }
+}
 .section-read-more .row .image-box__img {
   width: 100%;
   -o-object-fit: cover;
@@ -986,10 +996,22 @@ html {
     padding-left: 10rem;
   }
 }
+@media (max-width: 37.5em) {
+  .section-read-more .row .text-box-top {
+    width: 90%;
+    padding-left: 10rem;
+  }
+}
 @media (max-width: 75em) {
   .section-read-more .row .text-box-bottom {
     width: 75%;
     padding-right: 10rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .section-read-more .row .text-box-bottom {
+    width: 100%;
+    padding-left: 10rem;
   }
 }
 .section-read-more .row-bottom {
