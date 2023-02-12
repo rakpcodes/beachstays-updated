@@ -2,10 +2,11 @@
     display: flex;
     justify-content: space-between;
     background-color: transparent;
+    padding: 1.5rem 0;
 
     &-list {
         display: flex;
         justify-content: space-between;
-        width: 40%;
+        width: 45%;
     }
 }

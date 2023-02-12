@@ -2,3 +2,59 @@
     line-height: $val1;
     letter-spacing: $val2;
 }
+
+// MEDIA QUERY MANAGER
+
+/*
+
+Screen sizes
+0 - 600px: Phone
+600 - 900px: Tablet Portrait
+900 - 1200px: Tablet landscape
+1200 - 1800px: Current styles apply to this range
+1800px + : Big desktop
+
+$breakpoint arguments
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+*/
+
+@mixin respond($breakpoint) {
+    // 600px / 16px = 37.5em
+    @if $breakpoint == phone {
+        @media (max-width: 37.5em) {
+            @content;
+        }
+    }
+
+    // 900px / 16px = 56.25em
+    @if $breakpoint == tab-port {
+        @media (max-width: 56.25em) {
+            @content;
+        }
+    }
+
+    // 1200px / 16px = 75em
+    @if $breakpoint == tab-land {
+        @media (max-width: 75em) {
+            @content;
+        }
+    }
+
+    // 1800px / 16px = 112.5em
+    @if $breakpoint == big-desktop {
+        @media (min-width: 112.5em) {
+            @content;
+        }
+    }
+
+    // 750 / 16px = 46.88em
+    @if $breakpoint == header-dev {
+        @media (max-width: 46.88em) {
+            @content;
+        }
+    }
+}

@@ -3,10 +3,17 @@
 
 .header {
     &-text {
+        @include respond(tab-port) {
+            text-align: center;
+        }
         &__main {
             font-size: $font-size-h1-main;
             color: $color-3;
             @include lineLetter(7.8rem, 0.9rem);
+
+            @include respond(tab-land) {
+                font-size: 5rem;
+            }
         }
 
         &__sub {
@@ -14,6 +21,10 @@
             font-family: $font-family-second;
             color: $color-2;
             letter-spacing: 0.5rem;
+
+            @include respond(tab-land) {
+                font-size: 8rem;
+            }
         }
     }
 

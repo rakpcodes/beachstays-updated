@@ -9,3 +9,15 @@
         transform: translateY(0);
     }
 }
+
+@keyframes move-in-btm-tab-port {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -30%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}

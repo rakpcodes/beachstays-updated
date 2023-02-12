@@ -3,7 +3,7 @@
     background-size: cover;
     width: 100%;
     height: 65rem;
-    margin-bottom: 20rem;
+    margin-bottom: 10rem;
 
     &-content {
         position: relative;
@@ -12,10 +12,13 @@
     }
 
     &-image {
-        width: 55%;
+        width: 50rem;
         max-width: 60rem;
         position: absolute;
-        top: 30%;
+        top: 15rem;
+        @include respond(tab-port) {
+            display: none;
+        }
 
         &__img {
             width: 100%;
@@ -29,8 +32,17 @@
         width: 50%;
         position: absolute;
         top: 20rem;
-        left: 50rem;
+        left: 40rem;
         animation: move-in-btm 1s ease-out 0.5s;
         animation-fill-mode: backwards;
+
+        @include respond(tab-port) {
+            width: 100%;
+            top: 55%;
+            left: 65%;
+            transform: translate(-50%, -50%);
+            animation: move-in-btm-tab-port 1s ease-out;
+            animation-fill-mode: backwards;
+        }
     }
 }
