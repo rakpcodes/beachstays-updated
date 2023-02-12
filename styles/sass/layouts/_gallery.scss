@@ -7,14 +7,24 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+            @include respond(tab-port) {
+                flex-direction: column;
+                gap: 3rem;
+            }
         }
 
         .gallery-image {
             width: 31%;
 
+            @include respond(tab-port) {
+                width: 55%;
+            }
+
             &__img {
                 width: 100%;
                 object-fit: cover;
+                display: block;
             }
         }
     }

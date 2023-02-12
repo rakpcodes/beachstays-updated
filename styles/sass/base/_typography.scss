@@ -77,6 +77,10 @@
 .section {
     &-about {
         .text-box {
+            @include respond(tab-port) {
+                text-align: center;
+            }
+
             &__header {
                 font-size: $font-size-h2;
                 @include lineLetter(5.8rem, 0.38rem);
