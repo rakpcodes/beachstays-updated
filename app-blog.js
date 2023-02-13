@@ -55,5 +55,6 @@ const currentDay = daysOfWeek[date.getDay()]
 const currentMonth = monthsOfYear[date.getMonth()]
 const currentYear = date.getFullYear()
 
+const form = document.querySelector('.form-comment')
 const formSubmit = document.querySelector('.btn')
 

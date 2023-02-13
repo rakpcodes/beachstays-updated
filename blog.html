@@ -10,7 +10,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.css">
     <script src="https://kit.fontawesome.com/9519f6733b.js" crossorigin="anonymous"></script>
-    <script src="./blog.js" defer></script>
+    <script src="./app-blog.js" defer></script>
     <title>⛱ Beachstays - Blog</title>
 </head>
 
@@ -102,58 +102,77 @@
                     <div class="comments">
                         <h3 class="comments-header">Comments:</h3>
 
-                        <div class="comments-block">
-                            <div class="comments-image-box">
-                                <img src="./Assets/comment-image.jpg" alt="A headshot of the comment author."
-                                    class="comments-image-box__img">
+                        <div class="comments-posted">
+
+                            <div class="comments-block">
+                                <div class="comments-image-box">
+                                    <img src="./Assets/comment-image.jpg" alt="A headshot of the comment author."
+                                        class="comments-image-box__img">
+                                </div>
+                                <div class="comments-text-box">
+                                    <h4 class="comments-text-box__header u-margin-bottom-small">Tuesday October 9th,
+                                        2019 by
+                                        Reyansh</h4>
+                                    <p class="comments-text-box__body">Lorem ipsum dolor sit, amet consectetur
+                                        adipisicing
+                                        elit. Distinctio, voluptate
+                                        facilis? Magnam molestiae placeat sint aperiam porro numquam in quidem nostrum
+                                        amet
+                                        quia omnis enim repellendus officiis culpa, id maiores!</p>
+                                </div>
                             </div>
-                            <div class="comments-text-box">
-                                <h4 class="comments-text-box__header u-margin-bottom-small">Tuesday October 9th, 2019 by
-                                    Reyansh</h4>
-                                <p class="comments-text-box__body">Lorem ipsum dolor sit, amet consectetur adipisicing
-                                    elit. Distinctio, voluptate
-                                    facilis? Magnam molestiae placeat sint aperiam porro numquam in quidem nostrum amet
-                                    quia omnis enim repellendus officiis culpa, id maiores!</p>
+
+                            <div class="comments-block">
+                                <div class="comments-image-box">
+                                    <img src="./Assets/comment-image2.jpg" alt="A headshot of the comment author."
+                                        class="comments-image-box__img">
+                                </div>
+                                <div class="comments-text-box">
+                                    <h4 class="comments-text-box__header u-margin-bottom-small">Wednesday October 10th,
+                                        2019
+                                        by Olivia</h4>
+                                    <p class="comments-text-box__body">Lorem ipsum dolor sit, amet consectetur
+                                        adipisicing
+                                        elit. Distinctio, voluptate
+                                        facilis? Magnam molestiae placeat sint aperiam porro numquam in quidem nostrum
+                                        amet
+                                        quia omnis enim repellendus officiis culpa, id maiores!</p>
+                                </div>
                             </div>
+
                         </div>
+                        <!-- .comments-posted END-->
+                        <div class="comments-post">
 
-                        <div class="comments-block">
-                            <div class="comments-image-box">
-                                <img src="./Assets/comment-image2.jpg" alt="A headshot of the comment author."
-                                    class="comments-image-box__img">
-                            </div>
-                            <div class="comments-text-box">
-                                <h4 class="comments-text-box__header u-margin-bottom-small">Wednesday October 10th, 2019
-                                    by Olivia</h4>
-                                <p class="comments-text-box__body">Lorem ipsum dolor sit, amet consectetur adipisicing
-                                    elit. Distinctio, voluptate
-                                    facilis? Magnam molestiae placeat sint aperiam porro numquam in quidem nostrum amet
-                                    quia omnis enim repellendus officiis culpa, id maiores!</p>
-                            </div>
+                            <form action=" #" class="form u-margin-bottom-big" name="form-comment">
+
+                                <div class="wrapper">
+
+                                    <div class="form-row form-row-top u-margin-bottom-medium">
+                                        <label for="name" class="sr-only">Enter Your Name</label>
+                                        <input type="text" class="form-input form-input__text" placeholder="Name"
+                                            required>
+
+                                        <label for="email" class="sr-only">Enter Your Email Address</label>
+                                        <input type="email" class="form-input form-input__text"
+                                            placeholder="Email Address" required>
+                                    </div>
+
+                                    <div class="form-row form-row-bottom">
+                                        <label for="comment" class="sr-only">Comment</label>
+                                        <textarea name="comment" id="message" class="form-input form-input__text-area"
+                                            placeholder="Comment" required></textarea>
+
+                                        <button class="btn u-margin-top-small" type="submit">Post Comment</button>
+                                    </div>
+
+                                </div>
+                            </form>
+
                         </div>
-
-                        <form action="#" class="form u-margin-bottom-big" name="form-comment">
-
-                            <div class="form-row form-row-top u-margin-bottom-medium">
-                                <label for="name" class="sr-only">Enter Your Name</label>
-                                <input type="text" class="form-input form-input__text" placeholder="Name" required>
-
-                                <label for="email" class="sr-only">Enter Your Email Address</label>
-                                <input type="email" class="form-input form-input__text" placeholder="Email Address"
-                                    required>
-                            </div>
-
-                            <div class="form-row form-row-bottom">
-                                <label for="comment" class="sr-only">Comment</label>
-                                <textarea name="comment" id="message" class="form-input form-input__text-area"
-                                    placeholder="Comment" required></textarea>
-
-                                <button class="btn u-margin-top-small" type="submit">Post Comment</button>
-                            </div>
-
-                        </form>
-
+                        <!-- .comments-post END -->
                     </div>
+                    <!-- .comments END -->
                 </div>
                 <!-- .blog-post END -->
 
@@ -167,7 +186,8 @@
                     <div class="text-box">
                         <div class="text-box__mission">
                             <h3 class="text-box__header u-margin-bottom-small">Our Mission</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam atque voluptates quis.
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam atque voluptates
+                                quis.
                             </p>
                             <a href="#" class="text-box__link">Find out More.</a>
                         </div>
