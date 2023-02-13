@@ -25,7 +25,6 @@ const headerText = document.querySelector('.header-text');
 const navCallback = (navEntry, navObserver) => {
 
     // Can also use !navEntry[0]... kept as false to represent the value seen in the console.
-    console.dir(navEntry[0])
 
     if (navEntry[0].isIntersecting === false) {
         navbar.classList.add('nav-bg-on')

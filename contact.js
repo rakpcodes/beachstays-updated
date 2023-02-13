@@ -26,7 +26,6 @@ const navCallback = (navEntry, navObserver) => {
 
     // Can also use !navEntry[0]... kept as false to represent the value seen in the console.
     if (navEntry[0].isIntersecting === false) {
-        console.log(navEntry[0].isIntersecting)
         navbar.classList.add('nav-bg-on')
     } else {
         navbar.classList.remove('nav-bg-on')
