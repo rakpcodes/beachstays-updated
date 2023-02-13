@@ -19,6 +19,8 @@ mobileNavLink.forEach((link) => {
 
 // Intersection Observers
 
+//Nav Background
+
 const navbar = document.querySelector('.nav');
 const headerBlog = document.querySelector('.header-blog-text');
 
@@ -40,3 +42,18 @@ navOptions = {
 const navObserver = new IntersectionObserver(navCallback, navOptions)
 
 navObserver.observe(headerBlog);
+
+
+//Comments Section
+const commentParent = document.querySelector('.comments')
+const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const monthsOfYear = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "August", "October", "November", "December"];
+
+const date = new Date()
+
+const currentDay = daysOfWeek[date.getDay()]
+const currentMonth = monthsOfYear[date.getMonth()]
+const currentYear = date.getFullYear()
+
+const formSubmit = document.querySelector('.btn')
+
