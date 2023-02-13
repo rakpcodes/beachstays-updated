@@ -10,21 +10,40 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.css">
     <script src="https://kit.fontawesome.com/9519f6733b.js" crossorigin="anonymous"></script>
+    <script src="./app.js" defer></script>
     <title>⛱ Beachstays</title>
 </head>
 
 <body>
-    <header class="header">
+    <nav class="nav">
+        <div class="wrapper">
 
-        <nav class="nav wrapper">
-            <a href="#" class="nav-logo">Beachstays</a>
+            <a href="./index.html" class="nav-logo">Beachstays</a>
             <ul class="nav-list">
                 <li class="nav-list-item"><a href="./index.html" class="nav-list-link">Home</a></li>
-                <li class="nav-list-item"><a href="#" class="nav-list-link">About</a></li>
+                <li class="nav-list-item"><a href="#about" class="nav-list-link">About</a></li>
                 <li class="nav-list-item"><a href="./blog.html" class="nav-list-link">Blog</a></li>
                 <li class="nav-list-item"><a href="./contact.html" class=" nav-list-link">Contact</a></li>
             </ul>
-        </nav>
+
+            <button class="hamburger">
+                <div class="hamburger-bar"></div>
+            </button>
+
+            <nav class="mobile-nav">
+                <ul class="mobile-nav-list">
+                    <li class="mobile-nav-list-item"><a href="./index.html" class="mobile-nav-list-link">Home</a></li>
+                    <li class="mobile-nav-list-item"><a href="#about" class="mobile-nav-list-link">About</a></li>
+                    <li class="mobile-nav-list-item"><a href="./blog.html" class="mobile-nav-list-link">Blog</a></li>
+                    <li class="mobile-nav-list-item"><a href="./contact.html" class="mobile-nav-list-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </nav>
+
+    <header class="header">
 
         <div class="header-content">
             <div class="header-image">
@@ -34,6 +53,8 @@
                 <h1 class="header-text__main">welcome to <span class="header-text__sub">Beachstays</span></h1>
             </div>
         </div>
+
+
     </header>
 
     <main>

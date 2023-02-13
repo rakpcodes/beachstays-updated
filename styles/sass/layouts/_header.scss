@@ -15,7 +15,7 @@
         width: 50rem;
         max-width: 60rem;
         position: absolute;
-        top: 15rem;
+        top: 30rem;
         @include respond(tab-port) {
             display: none;
         }
@@ -31,14 +31,14 @@
     &-text {
         width: 50%;
         position: absolute;
-        top: 20rem;
+        top: 35rem;
         left: 40rem;
         animation: move-in-btm 1s ease-out 0.5s;
         animation-fill-mode: backwards;
 
         @include respond(tab-port) {
             width: 100%;
-            top: 55%;
+            top: 70%;
             left: 65%;
             transform: translate(-50%, -50%);
             animation: move-in-btm-tab-port 1s ease-out;

@@ -45,7 +45,8 @@
     }
 }
 
-.nav {
+.nav,
+.mobile-nav {
     &-logo {
         font-family: $font-family-second;
         text-decoration: none;
@@ -132,7 +133,6 @@
 
                 &-bottom {
                     text-align: right;
-                    // direction: rtl;
                 }
             }
         }
@@ -167,7 +167,7 @@
                     color: $color-text;
 
                     @include respond(tab-land) {
-                        font-size: 3.5rem;
+                        font-size: 3rem;
                     }
                 }
             }
