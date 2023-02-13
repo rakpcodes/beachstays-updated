@@ -6,11 +6,7 @@
 
         &-text {
             position: relative;
-            top: 15rem;
-
-            @include respond(tab-land) {
-                top: 10rem;
-            }
+            top: 25rem;
         }
     }
 }

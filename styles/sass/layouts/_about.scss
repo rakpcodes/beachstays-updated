@@ -1,15 +1,18 @@
 .section {
     &-about {
-        margin: 15rem 0;
-        display: flex;
-        justify-content: space-between;
+        padding: 15rem 0;
 
-        @include respond(tab-land) {
-            align-items: center;
-        }
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
 
-        @include respond(tab-port) {
-            flex-direction: column;
+            @include respond(tab-land) {
+                align-items: center;
+            }
+
+            @include respond(tab-port) {
+                flex-direction: column;
+            }
         }
 
         .text-box {

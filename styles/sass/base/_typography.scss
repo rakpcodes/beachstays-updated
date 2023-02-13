@@ -61,6 +61,10 @@
 
         &-item {
             font-size: $font-size-regular;
+
+            @include respond(tab-land) {
+                font-size: 3rem;
+            }
         }
 
         &-link {

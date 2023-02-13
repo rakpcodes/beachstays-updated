@@ -10,22 +10,43 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.css">
     <script src="https://kit.fontawesome.com/9519f6733b.js" crossorigin="anonymous"></script>
-    <title>⛱ Beachstays - About</title>
+    <script src="./blog.js" defer></script>
+    <title>⛱ Beachstays - Blog</title>
 </head>
 
 <body>
 
-    <header class="header header-blog">
+    <nav class="nav nav-bg-off">
         <div class="wrapper">
-            <nav class="nav">
-                <a href="#" class="nav-logo">Beachstays</a>
-                <ul class="nav-list">
-                    <li class="nav-list-item"><a href="./index.html" class="nav-list-link">Home</a></li>
-                    <li class="nav-list-item"><a href="#" class="nav-list-link">About</a></li>
-                    <li class="nav-list-item"><a href="./blog.html" class="nav-list-link">Blog</a></li>
-                    <li class="nav-list-item"><a href="./contact.html" class=" nav-list-link">Contact</a></li>
+
+            <a href="./index.html" class="nav-logo">Beachstays</a>
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="./index.html" class="nav-list-link">Home</a></li>
+                <li class="nav-list-item"><a href="./index.html#about" class="nav-list-link">About</a></li>
+                <li class="nav-list-item"><a href="./blog.html" class="nav-list-link">Blog</a></li>
+                <li class="nav-list-item"><a href="./contact.html" class=" nav-list-link">Contact</a></li>
+            </ul>
+
+            <button class="hamburger">
+                <div class="hamburger-bar"></div>
+            </button>
+
+            <nav class="mobile-nav">
+                <ul class="mobile-nav-list">
+                    <li class="mobile-nav-list-item"><a href="./index.html" class="mobile-nav-list-link">Home</a></li>
+                    <li class="mobile-nav-list-item"><a href="./index.html#about" class="mobile-nav-list-link">About</a>
+                    </li>
+                    <li class="mobile-nav-list-item"><a href="./blog.html" class="mobile-nav-list-link">Blog</a></li>
+                    <li class="mobile-nav-list-item"><a href="./contact.html" class="mobile-nav-list-link">Contact</a>
+                    </li>
                 </ul>
             </nav>
+
+        </div>
+    </nav>
+
+    <header class="header header-blog">
+        <div class="wrapper">
             <h1 class="header-blog-text">Blog</h1>
         </div>
     </header>

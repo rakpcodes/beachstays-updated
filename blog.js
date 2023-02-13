@@ -20,13 +20,12 @@ mobileNavLink.forEach((link) => {
 // Intersection Observers
 
 const navbar = document.querySelector('.nav');
-const headerText = document.querySelector('.header-text');
+const headerBlog = document.querySelector('.header-blog-text');
 
 const navCallback = (navEntry, navObserver) => {
 
     // Can also use !navEntry[0]... kept as false to represent the value seen in the console.
-    console.dir(navEntry[0])
-
+    console.log(navEntry[0].isIntersecting)
     if (navEntry[0].isIntersecting === false) {
         navbar.classList.add('nav-bg-on')
     } else {
@@ -35,10 +34,10 @@ const navCallback = (navEntry, navObserver) => {
 }
 
 navOptions = {
-    rootMargin: '-60px',
+    rootMargin: '-70px',
     threshold: 0.9,
 };
 
 const navObserver = new IntersectionObserver(navCallback, navOptions)
 
-navObserver.observe(headerText);
+navObserver.observe(headerBlog);

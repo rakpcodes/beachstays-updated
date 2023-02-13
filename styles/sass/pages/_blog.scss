@@ -6,7 +6,7 @@
 
         &-text {
             position: relative;
-            top: 15rem;
+            top: 25rem;
         }
     }
 }
@@ -38,10 +38,6 @@
                 top: -15rem;
                 width: 100%;
                 box-shadow: 2rem 2rem 0 0 $color-1;
-
-                @include respond(tab-port) {
-                    top: -10rem;
-                }
 
                 &__img {
                     display: block;
