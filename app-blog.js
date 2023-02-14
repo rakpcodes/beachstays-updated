@@ -45,16 +45,53 @@ navObserver.observe(headerBlog);
 
 
 //Comments Section
-const commentParent = document.querySelector('.comments')
+const commentParent = document.querySelector('.comments');
 const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const monthsOfYear = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "August", "October", "November", "December"];
 
-const date = new Date()
+const date = new Date();
 
-const currentDay = daysOfWeek[date.getDay()]
-const currentMonth = monthsOfYear[date.getMonth()]
-const currentYear = date.getFullYear()
+const currentDay = daysOfWeek[date.getDay()];
+const currentMonth = monthsOfYear[date.getMonth()];
+const dayOfMonth = date.getDate();
+const currentYear = date.getFullYear();
 
-const form = document.querySelector('.form-comment')
-const formSubmit = document.querySelector('.btn')
+const form = document.querySelector('.form');
+const formName = document.querySelector('.form-input');
+const formComment = document.querySelector('.form-input__text-area');
+const postedComments = document.querySelector('.comments-posted')
 
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault()
+
+    const newComment = document.createElement('div')
+    newComment.classList.add('comments-block')
+
+    const newImgBox = document.createElement('div')
+    newImgBox.classList.add('comments-image-box')
+
+    const newImg = document.createElement('img')
+    newImg.src = `./Assets/comment-image${Math.floor(Math.random() * 46)}.jpg`;
+    newImg.classList.add('comments-image-box__img')
+
+    const newTextBox = document.createElement('div')
+    newTextBox.classList.add('comments-text-box')
+
+    const newTextBoxHeader = document.createElement('h4')
+    newTextBoxHeader.classList.add('comments-text-box__header', 'u-margin-bottom-small')
+    newTextBoxHeader.innerText = `${currentDay} ${currentMonth} ${dayOfMonth}, ${currentYear} by ${formName.value}`
+
+    const newTextBoxBody = document.createElement('p')
+    newTextBoxBody.classList.add('comments-text-box__body')
+    newTextBoxBody.innerText = `${formComment.value}`
+
+    postedComments.appendChild(newComment)
+    newComment.appendChild(newImgBox)
+    newComment.appendChild(newTextBox)
+    newImgBox.appendChild(newImg)
+    newTextBox.appendChild(newTextBoxHeader)
+    newTextBox.appendChild(newTextBoxBody)
+
+
+})

@@ -1316,7 +1316,7 @@ html {
   border-bottom: 0.5rem solid #50e3c2;
   padding-right: 1.6rem;
 }
-@media (max-width: 56.25em) {
+@media (max-width: 75em) {
   .section-blog .border {
     width: 90%;
   }
@@ -1360,7 +1360,7 @@ html {
   width: 77%;
   margin: 5rem 0;
 }
-@media (max-width: 56.25em) {
+@media (max-width: 75em) {
   .section-blog .blog-post .comments-block {
     width: 85%;
   }
@@ -1380,7 +1380,7 @@ html {
 .section-blog .blog-post .comments .form {
   width: 75%;
 }
-@media (max-width: 56.25em) {
+@media (max-width: 75em) {
   .section-blog .blog-post .comments .form {
     width: 85%;
   }
@@ -1393,7 +1393,7 @@ html {
   position: relative;
   top: 15rem;
 }
-@media (max-width: 56.25em) {
+@media (max-width: 75em) {
   .section-blog .side-panel {
     display: none;
   }
