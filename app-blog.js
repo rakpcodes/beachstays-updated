@@ -72,7 +72,7 @@ form.addEventListener('submit', (event) => {
     newImgBox.classList.add('comments-image-box')
 
     const newImg = document.createElement('img')
-    newImg.src = `./Assets/comment-image${Math.floor(Math.random() * 46)}.jpg`;
+    newImg.src = `./Assets/comment-image${Math.floor(Math.random() * 46 + 1)}.jpg`;
     newImg.classList.add('comments-image-box__img')
 
     const newTextBox = document.createElement('div')
