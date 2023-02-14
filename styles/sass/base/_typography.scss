@@ -71,6 +71,7 @@
             text-decoration: none;
             text-transform: uppercase;
             color: $color-5;
+            transition: all 0.2s;
 
             &:hover {
                 color: $color-1;
@@ -275,6 +276,16 @@
         &__info {
             font-size: $font-size-regular;
             @include lineLetter(3.2rem, 0.2rem);
+
+            &-link {
+                text-decoration: none;
+                color: $color-5;
+                transition: all 0.2s;
+
+                &:hover {
+                    color: $color-1;
+                }
+            }
         }
     }
 }

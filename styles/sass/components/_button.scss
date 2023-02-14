@@ -6,4 +6,18 @@
     color: $color-5;
     border: none;
     padding: 1rem 1.5rem;
+    transition: all 0.2s;
+
+    &:hover,
+    &:focus {
+        outline: 1px solid $color-2;
+        background-color: $color-5;
+        color: $color-2;
+    }
+
+    &:active {
+        outline: none;
+        background-color: $color-2;
+        color: $color-5;
+    }
 }

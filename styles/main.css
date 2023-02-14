@@ -458,6 +458,8 @@ html {
   text-decoration: none;
   text-transform: uppercase;
   color: #fafffe;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 .nav-list-link:hover,
 .mobile-nav-list-link:hover {
@@ -616,6 +618,15 @@ html {
   line-height: 3.2rem;
   letter-spacing: 0.2rem;
 }
+.footer .text-box__info-link {
+  text-decoration: none;
+  color: #fafffe;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.footer .text-box__info-link:hover {
+  color: #50e3c2;
+}
 
 .u-margin-bottom-small {
   margin-bottom: 2rem !important;
@@ -650,6 +661,18 @@ html {
   color: #fafffe;
   border: none;
   padding: 1rem 1.5rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.btn:hover, .btn:focus {
+  outline: 1px solid #063974;
+  background-color: #fafffe;
+  color: #063974;
+}
+.btn:active {
+  outline: none;
+  background-color: #063974;
+  color: #fafffe;
 }
 
 .form {
@@ -1197,6 +1220,9 @@ html {
   .footer .text-box {
     width: 90%;
   }
+}
+.footer .text-box__info-link {
+  border-bottom: 1px solid #fafffe;
 }
 
 .header-contact {
