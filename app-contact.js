@@ -33,8 +33,8 @@ const navCallback = (navEntry, navObserver) => {
 }
 
 navOptions = {
-    rootMargin: '-60px',
-    threshold: 0.9,
+    rootMargin: '-45px',
+    threshold: 0.8,
 };
 
 const navObserver = new IntersectionObserver(navCallback, navOptions)

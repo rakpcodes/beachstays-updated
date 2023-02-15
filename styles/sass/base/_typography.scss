@@ -41,6 +41,10 @@
             font-size: $font-size-h1-alt;
             color: $color-5;
             @include lineLetter(5.8rem, 0.9rem);
+
+            @include respond(phone) {
+                font-size: 7rem;
+            }
         }
     }
 

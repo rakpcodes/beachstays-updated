@@ -433,6 +433,11 @@ html {
   line-height: 5.8rem;
   letter-spacing: 0.9rem;
 }
+@media (max-width: 37.5em) {
+  .header-contact-text {
+    font-size: 7rem;
+  }
+}
 .header-blog-text {
   font-size: 8.7rem;
   color: #fafffe;
@@ -700,6 +705,14 @@ html {
   display: flex;
   gap: 3rem;
 }
+@media (max-width: 75em) {
+  .form-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .form-row-bottom {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -744,6 +757,11 @@ html {
   width: 50%;
   border-style: none;
   border-bottom: 0.3rem solid #50e3c2;
+}
+@media (max-width: 75em) {
+  .form-input__text {
+    width: 100%;
+  }
 }
 .form-input__text-area {
   resize: none;
@@ -917,6 +935,11 @@ html {
 @media (max-width: 37.5em) {
   .header-text {
     top: 75%;
+  }
+}
+@media (max-width: 26.5em) {
+  .header-text {
+    left: 62%;
   }
 }
 
@@ -1290,6 +1313,12 @@ html {
 @media (max-width: 75em) {
   .section-contact-us .form {
     width: 100%;
+  }
+}
+@media (max-width: 26.5em) {
+  .section-contact-us .form {
+    width: 90%;
+    padding: 5rem 4rem;
   }
 }
 .section-contact-us .form-input__text-area {

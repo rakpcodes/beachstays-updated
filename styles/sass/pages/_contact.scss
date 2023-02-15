@@ -37,6 +37,11 @@
                 width: 100%;
             }
 
+            @include respond(phone-small) {
+                width: 90%;
+                padding: 5rem 4rem;
+            }
+
             &-input {
                 &__text-area {
                     height: 25rem;

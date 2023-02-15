@@ -48,5 +48,9 @@
         @include respond(phone) {
             top: 75%;
         }
+
+        @include respond(phone-small) {
+            left: 62%;
+        }
     }
 }
