@@ -439,6 +439,12 @@ html {
     font-size: 7rem;
   }
 }
+@media (max-width: 26.5em) {
+  .header-contact-text {
+    font-size: 5.5rem;
+    text-align: center;
+  }
+}
 .header-blog-text {
   font-size: 8.7rem;
   color: #fafffe;
@@ -457,7 +463,8 @@ html {
 @media (max-width: 37.5em) {
   .nav-logo,
   .mobile-nav-logo {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    margin-left: 1rem;
   }
 }
 .nav-list,
@@ -788,11 +795,6 @@ html {
 }
 .nav-logo {
   z-index: 89;
-}
-@media (max-width: 37.5em) {
-  .nav-logo {
-    display: none;
-  }
 }
 .nav-list {
   display: -webkit-box;

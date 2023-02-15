@@ -15,7 +15,7 @@
         z-index: 89;
 
         @include respond(phone) {
-            display: none;
+            // display: none;
         }
     }
 

@@ -45,6 +45,11 @@
             @include respond(phone) {
                 font-size: 7rem;
             }
+
+            @include respond(phone-small) {
+                font-size: 5.5rem;
+                text-align: center;
+            }
         }
     }
 
@@ -67,7 +72,8 @@
         font-size: $font-size-logo;
 
         @include respond(phone) {
-            font-size: 3rem;
+            font-size: 2.5rem;
+            margin-left: 1rem;
         }
     }
 
