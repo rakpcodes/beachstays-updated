@@ -13,6 +13,10 @@
 
     &-logo {
         z-index: 89;
+
+        @include respond(phone) {
+            display: none;
+        }
     }
 
     &-list {
@@ -49,6 +53,10 @@
 
         @include respond(tab-land) {
             display: block;
+        }
+
+        @include respond(phone-small) {
+            margin-right: 2rem;
         }
 
         &-bar,
