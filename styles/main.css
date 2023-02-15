@@ -113,7 +113,7 @@ html body .wrapper {
 }
 @media (max-width: 37.5em) {
   html body .wrapper {
-    max-width: 525px;
+    max-width: 500px;
   }
 }
 
@@ -406,6 +406,11 @@ html {
     font-size: 5rem;
   }
 }
+@media (max-width: 37.5em) {
+  .header-text__main {
+    font-size: 4rem;
+  }
+}
 .header-text__sub {
   font-size: 9rem;
   font-family: "Playfair Display SC", serif;
@@ -415,6 +420,11 @@ html {
 @media (max-width: 75em) {
   .header-text__sub {
     font-size: 8rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .header-text__sub {
+    font-size: 6rem;
   }
 }
 .header-contact-text {
@@ -896,6 +906,11 @@ html {
             animation: move-in-btm-tab-port 1s ease-out;
     -webkit-animation-fill-mode: backwards;
             animation-fill-mode: backwards;
+  }
+}
+@media (max-width: 37.5em) {
+  .header-text {
+    top: 75%;
   }
 }
 

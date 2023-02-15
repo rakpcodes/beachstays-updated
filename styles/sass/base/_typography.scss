@@ -14,6 +14,10 @@
             @include respond(tab-land) {
                 font-size: 5rem;
             }
+
+            @include respond(phone) {
+                font-size: 4rem;
+            }
         }
 
         &__sub {
@@ -24,6 +28,10 @@
 
             @include respond(tab-land) {
                 font-size: 8rem;
+            }
+
+            @include respond(phone) {
+                font-size: 6rem;
             }
         }
     }

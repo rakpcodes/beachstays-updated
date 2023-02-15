@@ -44,5 +44,9 @@
             animation: move-in-btm-tab-port 1s ease-out;
             animation-fill-mode: backwards;
         }
+
+        @include respond(phone) {
+            top: 75%;
+        }
     }
 }
