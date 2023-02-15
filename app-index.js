@@ -34,7 +34,7 @@ const navCallback = (navEntry, navObserver) => {
 }
 
 navOptions = {
-    rootMargin: '-60px',
+    rootMargin: '-50px',
     threshold: 0.9,
 };
 

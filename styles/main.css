@@ -113,7 +113,7 @@ html body .wrapper {
 }
 @media (max-width: 37.5em) {
   html body .wrapper {
-    max-width: 500px;
+    max-width: 400px;
   }
 }
 
@@ -408,7 +408,7 @@ html {
 }
 @media (max-width: 37.5em) {
   .header-text__main {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 }
 .header-text__sub {
@@ -424,7 +424,7 @@ html {
 }
 @media (max-width: 37.5em) {
   .header-text__sub {
-    font-size: 6rem;
+    font-size: 5.5rem;
   }
 }
 .header-contact-text {
@@ -447,6 +447,12 @@ html {
   text-transform: uppercase;
   color: #50e3c2;
   font-size: 3.46rem;
+}
+@media (max-width: 37.5em) {
+  .nav-logo,
+  .mobile-nav-logo {
+    font-size: 3rem;
+  }
 }
 .nav-list,
 .mobile-nav-list {

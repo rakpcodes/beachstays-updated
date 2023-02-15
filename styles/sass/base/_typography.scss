@@ -16,7 +16,7 @@
             }
 
             @include respond(phone) {
-                font-size: 4rem;
+                font-size: 3.5rem;
             }
         }
 
@@ -31,7 +31,7 @@
             }
 
             @include respond(phone) {
-                font-size: 6rem;
+                font-size: 5.5rem;
             }
         }
     }
@@ -61,6 +61,10 @@
         text-transform: uppercase;
         color: $color-1;
         font-size: $font-size-logo;
+
+        @include respond(phone) {
+            font-size: 3rem;
+        }
     }
 
     &-list {
